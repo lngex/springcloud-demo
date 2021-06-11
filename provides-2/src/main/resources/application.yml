@@ -1,0 +1,12 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:1010/eureka,http://eureka2:1020/eureka,http://eureka3:1030/eureka #告诉服务提供者要把服务注册到哪儿
+  instance:
+    prefer-ip-address: true # 当调用getHostname获取实例的hostname时，返回ip而不是host名称
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+spring:
+  application:
+    name: userprovides

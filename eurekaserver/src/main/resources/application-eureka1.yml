@@ -1,0 +1,13 @@
+server:
+  port: 1010
+eureka:
+  instance:
+    hostname: eureka1
+  client:
+    registerWithEureka: false #是否要注册到eureka
+    fetchRegistry: false #表示是否从Eureka Server获取注册信息
+    serviceUrl:
+      defaultZone: http://eureka1:1010/eureka,http://eureka2:1020/eureka,http://eureka3:1030/eureka #单机配置
+spring:
+  application:
+    name: eureka1
