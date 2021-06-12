@@ -11,6 +11,7 @@
         <module name="provides-2" />
         <module name="userconnom" />
         <module name="consumer" />
+        <module name="zuulserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="springcloud-demo" options="-parameters" />
       <module name="user-connom" options="-parameters" />
       <module name="userconnom" options="-parameters" />
+      <module name="zuulserver" options="-parameters" />
     </option>
   </component>
 </project>

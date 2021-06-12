@@ -11,6 +11,7 @@ public class ProviderController {
 
     @RequestMapping("/p/{id}")
     public User getUser(@PathVariable("id") Long id){
+        // int i = 1/0;
         return new User(id,"波多老师nb"+id);
     }
 }
